@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1>Envío de Documentos al Ayuntamiento de Tres Cantos</h1>
+</head>
+
+<body>
+    <h2>Instrucciones Generales</h2>
+    <h3>Por favor,siga los siguientes pasos:</h3>
+    <p align="center">Es importante que envíe todos los documentos requeridos con la información correcta y siga las
+        instrucciones detalladamente</p>
+        <b>Nota: </b><i>Revise dos veces</i> <u>antes de enviar</u> <small>para evitar errores.</small>
+
+        <h2>Lista de documentos necesarios:</h2>
+        <ol type ="1">
+            <li>Copia del DNI</li>
+            <li>Justificante de empadronamiento</li>
+            <li>Último recibo del IBI</li>
+        </ol>
+        <ol type ="A">
+            <li>Certificado de convivencia</li>
+            <li>Documento de propiedad</li>
+        </ol>
+        <ol type="i">
+            <li>Escritura pública</li>
+            <li>Documentos adicionales si los hubiera</li>
+        </ol>
+        <form action="submit" method="post">
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre" name="nombre" minlength="3" maxlength="50" placeholder="Escribe tu nombre" required>
+                <br>
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@dominio.com">
+                <br>
+                <label for="contrasenya">Contraseña: </label>
+                <input type="password" id="contrasenya" name="contrasenya" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" >
+                <br>
+                <label for="edad">Edad: </label>
+                <input type="number"id="edad" name="edad" min="18" max="99" step="1">
+                <br>
+                <label for="fecha">Fecha de nacimiento: </label>
+                <input type="date" id="fecha" name="fecha">
+                <br>
+                <label for="hora">Hora de cita: </label>
+                <input type="time" id="hora" name="hora">
+                <br>
+                <label for="color">Color favorito: </label>
+                <input type="color" id="color" name="color">
+                <br>
+                <label for="documento">Sube tu documento: </label><input type="file" id="documento" name="documento">
+                <h3>Documentos a enviar:</h3>
+
+                <input type="checkbox" id="DNI" name="DNI" value="1">
+                <label for="DNI">Copia del DNI</label>
+                <br>
+                <input type="checkbox" id="empadronamiento" name="empadronamiento" value="2">
+                <label for="empadronamiento">Justificante de empadronamiento</label>
+                <br>
+                <input type="checkbox" id="IBI" name="IBI" value="3">
+                <label for="IBI">Último recibo del IBI</label>
+                <br>
+                <input type="checkbox" id="convivencia" name="convivencia" value="4">
+                <label for="convivencia">Certificado de convivencia</label>
+                <br>
+                <input type="checkbox" id="propiedad" name="propiedad" value="5">
+                <label for="propiedad">Documento de propiedad</label>
+                <br>
+                <label for="terminos">¿Aceptas los términos? </label>
+                <input type="checkbox" id="terminos" name="terminos" checked >
+                <br>
+                Sexo:
+                <input type="radio" id="masculino" name="sexo" valeu="1">
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="femenino" name="sexo" valeu="2">
+                <label for="femenino">Femenino</label>
+                <br>
+                <label for="comentarios">Comentarios: </label>
+                <textarea id="comentarios" name="comentarios" rows="2" cols="22"></textarea>
+            </fieldset>
+            <br>
+            <input type="submit">
+        </form>
+
+</body>
+
+</html>

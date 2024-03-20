@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE alumnos [
+<!ELEMENT alumnos (alumno*)>
+<!ELEMENT alumno (id, nombre, (correo | telefono)?, curso)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT correo (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT curso (#PCDATA)>
+]>
+<alumnos>
+    <alumno>
+        <id>001</id>
+        <nombre>Juan Pérez</nombre>
+        <correo>juan.perez@example.com</correo>
+        <curso>Matemáticas</curso>
+    </alumno>
+    <alumno>
+        <id>002</id>
+        <nombre>Maria López</nombre>
+        <telefono>555-1234</telefono>
+        <curso>Historia</curso>
+    </alumno>
+    <alumno>
+        <id>003</id>
+        <nombre>Carlos García</nombre>
+        <!-- Este alumno no tiene ni correo ni teléfono proporcionados -->
+        <curso>Ciencias</curso>
+    </alumno>
+</alumnos>

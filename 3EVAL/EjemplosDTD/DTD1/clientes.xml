@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE clientes [
+<!ELEMENT clientes (cliente*)>
+<!ELEMENT cliente (id, nombre, correo)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT correo (#PCDATA)>
+]>
+<clientes>
+    <cliente>
+        <id>001</id>
+        <nombre>Juan Pérez</nombre>
+        <correo>juan.perez@example.com</correo>
+    </cliente>
+    <cliente>
+        <id>002</id>
+        <nombre>Maria López</nombre>
+        <correo>maria.lopez@example.com</correo>
+    </cliente>
+    <cliente>
+        <id>003</id>
+        <nombre>Carlos García</nombre>
+        <correo>carlos.garcia@example.com</correo>
+    </cliente>
+</clientes>

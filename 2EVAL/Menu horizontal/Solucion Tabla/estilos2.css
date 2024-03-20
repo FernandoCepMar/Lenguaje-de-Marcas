@@ -1,0 +1,50 @@
+div
+{
+    font-size:20px;
+}
+
+
+table
+{
+    width:60%;
+    height:500px;
+    margin: auto;
+
+}
+
+table,th,td
+{
+    border:1px solid;
+}
+
+#blanco{
+
+    background-color: white;
+
+}
+
+td
+{
+    background-color:#88aacc;
+    text-align:left;
+}
+
+
+.td_mes
+{
+	background-color:#aaaadd
+}
+
+
+tr:nth-child(odd){background-color: #bbeeff;}
+
+tr:nth-child(even){background-color: #99ccee;}
+
+
+
+tr
+{
+text-align:center;
+}
+
+

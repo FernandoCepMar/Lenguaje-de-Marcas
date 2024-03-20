@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Curso de Programación Avanzada </title>
+</head>
+
+<body>
+    <h1>Curso de Programación Avanzada
+    </h1>
+    <h2>Acerca del Curso</h2>
+    <b>Destacado:</b> Este curso está especialmente diseñado para aquellos
+    desarrolladores <i>apasionados</i> que desean llevar sus habilidades al siguiente nivel. No sólo cubrimos temas
+    avanzados,
+    sino que te ofrecemos una experiencia integral en el mundo del desarrollo.
+
+    <h3>¿Por qué elegir este curso?</h3>
+    <ul>
+        <li>Profesores Expertos con años de experiencia en la industria.</li>
+        <li>Material actualizado constantemente para estar al día con las últimas tendencias.</li>
+        <li>Clases prácticas con proyectos reales y casos de estudio.</li>
+        <li>Comunidad activa de estudiantes y profesionales.</li>
+
+    </ul>
+    <h2>Temario del Curso</h2>
+    <ol type="1">
+        <li>Introducción a la Programación Avanzada</li>
+        <li>Estructuras de Datos: Árboles y Grafos</li>
+        <li>Patrones de Diseño Clásicos y Modernos</li>
+        <li>Programación Asíncrona y Concurrency</li>
+        <li>Desarrollo Backend y Frontend</li>
+        <li>Principios de Arquitectura de Software</li>
+        <li> Testing, CI/CD, y Despliegue</li>
+    </ol>
+
+    <h2>Inscríbete Ahora</h2>
+
+    <form action="/submit-form" method="post">
+        <fieldset>
+            <legend>Información Personal</legend>
+            <label>
+                Nombre completo:<input type="text" id="nombre" name="nombre" size="40" maxlength="100" required></input>
+            </label>
+            <label>
+                Correo Electrónico:<input type="email" id="email" name="email" size="30" maxlength="100"
+                    required></input>
+            </label>
+            <label>
+                Número de Teléfono:<input type="tel" id="tel" name="tel" size="15" maxlength="15"></input>
+            </label>
+            <br>
+            <label>
+                Fecha de Nacimiento.<input type="date" id="date" name="date"></input></label>
+            <label>
+                Dirección:<input type="text" id="direccion" name="direccion" size="60" maxlength="200"></label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Experiencia en Programación</legend>
+            Nivel:<select>
+                <option>Novato</option>
+                <option>Intermedio</option>
+                <option>Experto</option>
+            </select>
+            ¿Tienes experiencia previa en otros lenguajes?
+            <label>
+                <input type="checkbox" name="phyton" value="1">Python</label>
+            <label>
+                <input type="checkbox" name="javascript" value="2">JavaScript</label>
+            <label>
+                <input type="checkbox" name="java" value="3">Java</label>
+
+        </fieldset>
+        <br>
+        ¿Cómo te enteraste de nosotros?
+
+        <label><input type="radio" name="como" value="1">Internet</label>
+        <label><input type="radio" name="como" value="2">Amigo</label>
+        <label><input type="radio" name="como" value="3">Publicidad</label>
+        <br><br>
+
+        Comentarios Adicionales:<br>
+        <textarea name="comentario" row="4" cols="50" maxlength="500"></textarea>
+        <br>
+        <p align="center"><input type="submit" value="Apuntarme al curso"></p>
+
+    </form>
+</body>
+
+</html>

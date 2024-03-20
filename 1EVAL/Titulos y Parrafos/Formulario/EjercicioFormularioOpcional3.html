@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1>Envío de Álbum Fotográfico a Imprenta</h1>
+</head>
+
+<body>
+    <h2>Convierte tus recuerdos digitales en físicos</h2>
+    <h3>Proceso de envío</h3>
+    <p align="center">Es fácil y rápido enviar tus fotos en formato digital a nuestra imprenta.
+        <br>
+        <b>Sigue</b> los siguientes <i>pasos</i> y pronto tendrás tu álbum <u>fotográfico</u> en la puerta de tu casa.
+    </p>
+    <small>Nota: Asegúrate de tener todas tus fotos listas y en la resolución adecuada antes de enviarlas.</small>
+    <ol type="1">
+        <li>Selecciona las fotos que deseas imprimir.</li>
+        <li>Organízalas en el orden que prefieras.</li>
+        <li>Sube tus fotos en nuestra plataforma.</li>
+    </ol>
+    <ol type="A">
+        <li>Elige el diseño y tema de tu álbum.</li>
+        <li>Confirma tu dirección de envío.</li>
+        <li>Realiza el pago.</li>
+    </ol>
+    <ol type="i">
+        <li>Espera la confirmación de tu pedido.</li>
+        <li>Recibe tu álbum en tu domicilio.</li>
+        <li>¡Disfruta tus recuerdos!</li>
+    </ol>
+    <form>
+        <fieldset>
+            <legend>Formulario de Envío de Fotos</legend>
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" name="nombre" minlength="3" maxlength="100"
+                title="Ingrese su nombre completo" placeholder="Juan Pérez">
+            <br>
+            <label for="email">Correo electrónico: </label>
+            <input type="email" id="email" name="email" title="Ingrese una dirección de correo válida"
+                placeholder="ejemplo@dominio.com" size="16">
+            <br>
+            <label for="contrasenya">Contraseña: </label>
+            <input type="password" id="contrasenya" name="contrasenya" pattern="^[a-zA-Z0-9]{8,}$"
+                title="Ingrese una contraseña segura" placeholder="Mínimo 8 caracteres">
+            <br>
+            <label for="edad">Edad: </label>
+            <input type="number" id="edad" name="edad" min="18" max="100" step="1">
+            <br>
+            <label for="fecha">Fecha de envío: </label>
+            <input type="date" id="fecha" name="fecha">
+            <br>
+            <label for="hora">Hora preferida de entrega: </label>
+            <input type="time" id="hora" name="hora">
+            <br>
+            <label for="color">Elige el color del álbum: </label>
+            <input type="color" id="color" name="color">
+            <br><br>
+            ¿Deseas que las fotos tengan un borde?
+            <br><br>
+            <input type="radio" id="si" name="borde" valeu="1" checked>
+            <label for="si">Si</label>
+            <input type="radio" id="no" name="borde" valeu="2">
+            <label for="no">No</label>
+            <br>
+
+            <label for="comentarios">Comentarios adicionales: </label>
+            <textarea id="comentarios" name="comentarios" rows="2" cols="20"></textarea>
+            <br>
+            Sube tus fotos:
+            <input type="file" id="foto" name="foto" value="Elegir archivos" multiple>
+            <br>
+            <input type="checkbox" id="terminos" name="terminos">
+            <label for="terminos">Acepto los términos y condiciones</label>
+            <br>
+            <input type="submit">
+
+
+
+
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

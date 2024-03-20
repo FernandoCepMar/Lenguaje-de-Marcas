@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contaminación Atmosférica</title>
+</head>
+<style>
+    /* 333333 gris osc
+f4f4f4 gris fondo
+dddddd gris sidebar */
+
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    header {
+        background-color: #333333;
+        text-align: center;
+    }
+
+    header .menu a {
+        display: inline-block;
+        text-decoration: 0;
+        color: white;
+        padding: 10px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas:
+            "sidebar content"
+        ;
+        background-color: #f4f4f4;
+        gap: 20px;
+        padding: 18px;
+    }
+
+    .sidebar {
+        grid-area: sidebar;
+        background-color: #dddddd;
+        border-radius: 15px;
+        padding: 15px 20px;
+    }
+
+    .content {
+        grid-area: content;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 15px;
+    }
+
+    footer {
+        color: white;
+        text-align: center;
+        padding: 10px;
+        background-color: #333333;
+    }
+
+    .box {
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+        padding: 15px 20px;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="menu">
+            <a href="#inicio">Inicio</a>
+            <a href="#causas">Causas</a>
+            <a href="#impacto">Impacto</a>
+            <a href="#prevencion">Prevención</a>
+        </div>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Sidebar</h3>
+            <p>Información adicional, enlaces, o datos relevantes.</p>
+        </aside>
+        <div class="content">
+            <!-- Contenido Principal -->
+            <div class="box">
+                <h2>¿Qué es la Contaminación Atmosférica?</h2>
+                <p>La contaminación atmosférica se refiere a la presencia en el aire de sustancias nocivas en cantidades
+                    que representan un riesgo para la salud humana y el medio ambiente.</p>
+            </div>
+            <div class="box">
+                <h2>Causas Principales</h2>
+                <p>Las principales causas incluyen emisiones de vehículos, fábricas, quema de combustibles fósiles, y
+                    actividades agrícolas.</p>
+            </div>
+            <div class="box">
+                <h2>Impacto en la Salud</h2>
+                <p>La contaminación del aire puede provocar problemas respiratorios, enfermedades cardíacas, asma y
+                    otros problemas de salud.</p>
+            </div>
+            <!-- Agrega más cajas según sea necesario -->
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Contaminación Atmosférica</p>
+    </footer>
+</body>
+
+</html>

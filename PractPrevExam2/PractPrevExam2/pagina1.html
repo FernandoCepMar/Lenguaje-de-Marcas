@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página 1</title>
+</head>
+
+<body bgcolor="#dddddd">
+  <br>
+
+  <h2>Formulario de entrada de datos</h2></span>
+
+  <div align="middle">
+    <form action="programa.php" method="post" enctype="multipart/form-data">
+
+      <table width="60%" border="0">
+        <tr bgcolor="#dddddd">
+
+          <td bgcolor="#00aaff">
+            <br>
+            <input type="text" name="caja1" value="Nombre" maxlength="15" size="20" maxlength="15">
+            <br>
+            <br>
+
+            <input type="text" name="caja2" value="Apellidos" size="40" maxlength="30">
+
+            <br>
+            <br>
+
+            <textarea name="comentarios" rows="6" cols="50">Pon aquí tus comentarios
+</textarea>
+            <br>
+            <br>
+            Seleccione una foto<br>
+            <input type="file" name="file1">
+            <br>
+            <br>
+
+            <input type="text" name="caja3" value="e-mail" size="40" maxlength="25">
+
+            <br>
+            <br>
+            Password <input type="password" name="contraseña" maxlength="10">
+            <br>
+            <br>
+
+          <td valign="center" bgcolor="#00aaff">
+
+            <input type="radio" name="edad" value="1">Menor de 18
+            <br>
+            <input type="radio" name="edad" value="2" checked>Entre 18 y 65
+            <br>
+            <input type="radio" name="edad" value="2">Mayor de 65
+
+          </td>
+        </tr>
+
+        <tr bgcolor="#dddddd">
+          <td></td>
+          <td colspan="2">
+
+            <br>
+            <input type="submit" value="Enviar informaci&oacute;n">
+            <br>
+            <br>
+
+          </td>
+        </tr>
+        <tr bgcolor="#dddddd">
+          <td colspan="2">
+            <br>
+            <input type="checkbox" name="publicaciones" value="1" checked><big><big>Acepto recibir
+                publicaciones</big></big>
+
+            <br>
+          </td>
+          <td bgcolor="#dddddd"></td>
+          <br>
+        </tr>
+
+      </table>
+
+    </form>
+
+  </div>
+
+</body>
+
+
+</html>

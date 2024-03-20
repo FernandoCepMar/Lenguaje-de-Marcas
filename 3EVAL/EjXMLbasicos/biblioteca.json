@@ -1,0 +1,72 @@
+{
+  "biblioteca": {
+    "libro": [
+      {
+        "$": {
+          "categoria": "Cocina"
+        },
+        "titulo": [
+          {
+            "_": "Everyday Italian",
+            "$": {
+              "idioma": "it"
+            }
+          }
+        ],
+        "autor": [
+          "Giada De Laurentis"
+        ],
+        "anio": [
+          "2005"
+        ],
+        "precio": [
+          "30.00"
+        ]
+      },
+      {
+        "$": {
+          "categoria": "Infantil"
+        },
+        "titulo": [
+          {
+            "_": "Harry Potter",
+            "$": {
+              "idioma": "es"
+            }
+          }
+        ],
+        "autor": [
+          "J K. Rowling"
+        ],
+        "anio": [
+          "2005"
+        ],
+        "precio": [
+          "29.99"
+        ]
+      },
+      {
+        "$": {
+          "categoria": "Web"
+        },
+        "titulo": [
+          {
+            "_": "Learning XML",
+            "$": {
+              "idioma": "en"
+            }
+          }
+        ],
+        "autor": [
+          "Erik T. Ray"
+        ],
+        "anio": [
+          "2003"
+        ],
+        "precio": [
+          "39.95"
+        ]
+      }
+    ]
+  }
+}

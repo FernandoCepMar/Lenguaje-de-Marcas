@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<equipos>
+
+    <equipo>
+
+        <nombre>Osasuna FC</nombre>
+        <ciudad>Pamplona</ciudad>
+        <entrenador>Paco Gurruchavea</entrenador>
+
+        <jugadores>
+
+            <jugador posicion="portero">
+                <nombre>Joaquin</nombre>
+                <nacionalidad>Español</nacionalidad>
+            </jugador>
+
+            <jugador posicion="delantero">
+                <nombre>Mohamed</nombre>
+                <nacionalidad>Marroquí</nacionalidad>
+            </jugador>
+
+        </jugadores>
+
+    </equipo>
+
+
+    <equipo>
+
+        <nombre>Cádiz FC</nombre>
+        <ciudad>Cádiz</ciudad>
+        <entrenador>Fernando Fernández</entrenador>
+
+        <jugadores>
+
+            <jugador posicion="defensa">
+                <nombre>Arbeloa</nombre>
+                <nacionalidad>Español</nacionalidad>
+            </jugador>
+
+            <jugador posicion="medio">
+                <nombre>Cristiano</nombre>
+                <nacionalidad>Portugués</nacionalidad>
+            </jugador>
+
+        </jugadores>
+
+    </equipo>
+
+</equipos>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio formulario</title>
+    <h1>Formulario de Registro</h1>
+</head>
+
+<body>
+    <form action="submit" method="post"></form>
+    <fieldset>
+        <legend>Datos personales</legend>
+        <label>
+            Nombre: <input type="text" id="nombre" name="nombre" required>
+        </label> <br>
+        <br>
+        <label>
+            Apellido: <input type="text" id="apellido" name="apellido" required><br>
+        </label><br>
+        <label>
+            Fecha de nacimiento: <input type="date" id="date" name="date"><br>
+        </label><br>
+
+        Sexo:<label>
+            <input type="radio" name="sexo" value="1">Masculino</label>
+        <label><input type="radio" name="sexo" value="2">Femenino</label>
+
+    </fieldset>
+    <fieldset>
+        <legend>Datos de contacto</legend>
+
+        <label>Correo electrónico: <input type="email" id="email" name="email" required><br>
+        </label><br>
+        <label>Teléfono: <input type="tel" id="tel" name="tel"><br>
+        </label><br>
+
+        <label>Dirección:<textarea name="direccion" rows="5" cols="60">
+</textarea></label>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Encuesta</legend>
+        <br>
+        ¿Cómo te enteraste de nosotros?<br><br>
+
+
+        <select>
+
+            <option selected value="1">Internet</option>
+
+            <option value="2">Un amigo</option>
+
+            <option value="3">Publicidad</option>
+
+            <option value="4"> Otros.</option>
+
+        </select>
+        <br><br><br>
+
+        ¿Te gustaría recibir noticias nuestras?<br>
+        <br>
+
+        <input type="checkbox">Sí,quiero recibir noticias.<br><br>
+
+    </fieldset>
+
+    </form>
+    <input type="submit">
+
+</body>
+
+</html>

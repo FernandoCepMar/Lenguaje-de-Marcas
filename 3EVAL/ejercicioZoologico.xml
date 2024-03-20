@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Crear el DTD donde:El elemento raíz <zoologico>
+contiene un único elemento <habitats>, que a su vez puede contener uno o más <habitat>.Cada
+<habitat> debe tener un <nombre> y puede tener grupos de <mamiferos>, <aves>, y/o <reptiles>.Los
+grupos de animales (mamíferos, aves, reptiles) pueden contener uno o más de su tipo correspondiente
+(por ejemplo, <mamifero>), y cada uno debe tener una <especie> y un conjunto de
+<caracteristicas>.<caracteristicas> puede contener una o más <caracteristica>.Los elementos
+<nombre>, <especie>, y <caracteristica> deben contener datos textuales.-->
+<!DOCTYPE zoologico [
+    <!ELEMENT zoologico (habitats)>
+    <!ELEMENT habitats (habitat+)>
+    <!ELEMENT habitat (nombre,(mamiferos | aves | reptiles)+)>
+    <!ELEMENT mamiferos (mamifero+)>
+    <!ELEMENT aves (ave+)>
+    <!ELEMENT reptiles (reptil+)>
+    <!ELEMENT mamifero (especie,caracteristicas)>
+    <!ELEMENT ave (especie,caracteristicas)>
+    <!ELEMENT reptil (especie,caracteristicas)>
+    <!ELEMENT caracteristicas (caracteristica+)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT especie (#PCDATA)>
+    <!ELEMENT caracteristica (#PCDATA)>
+]>
+<zoologico>
+    <habitats>
+        <habitat>
+            <nombre>Selva Tropical</nombre>
+            <mamiferos>
+                <mamifero>
+                    <especie>Jaguar</especie>
+                    <caracteristicas>
+                        <caracteristica>Carnívoro</caracteristica>
+                        <caracteristica>Ágil en los árboles</caracteristica>
+                    </caracteristicas>
+                </mamifero>
+            </mamiferos>
+            <aves>
+                <ave>
+                    <especie>Tucán</especie>
+                    <caracteristicas>
+                        <caracteristica>Pico grande y colorido</caracteristica>
+                    </caracteristicas>
+                </ave>
+            </aves>
+        </habitat>
+        <habitat>
+            <nombre>Desierto</nombre>
+            <reptiles>
+                <reptil>
+                    <especie>Serpiente de Cascabel</especie>
+                    <caracteristicas>
+                        <caracteristica>Veneno potente</caracteristica>
+                    </caracteristicas>
+                </reptil>
+            </reptiles>
+        </habitat>
+    </habitats>
+</zoologico>

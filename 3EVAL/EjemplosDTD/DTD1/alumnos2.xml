@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE alumnos [
+<!ELEMENT alumnos (alumno)*>
+<!ELEMENT alumno (#PCDATA | correo | telefono)*>
+<!ELEMENT correo (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+]>
+<alumnos>
+    <alumno>Carlos García
+        <correo>carlos.garcia@example.com</correo>
+        es un estudiante destacado en el curso de Ciencias.
+    </alumno>
+    <alumno>Maria López
+        <telefono>618452657</telefono>
+        <telefono>916754343</telefono>
+        participa activamente en el club de Historia.
+    </alumno>
+    <alumno>Juan Pérez
+        es apasionado por las Matemáticas y participa en competencias.
+    </alumno>
+</alumnos>

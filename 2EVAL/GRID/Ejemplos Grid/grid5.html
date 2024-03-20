@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            display: inline-grid;
+            grid-template-columns: auto auto;
+            /* Dos columnas */
+            gap: 10px;
+            /* Espacio entre los ítems */
+            background-color: #f2f2f2;
+            /* Color de fondo */
+            padding: 10px;
+            /* Relleno alrededor del grid */
+        }
+
+        .grid-container>div {
+            background-color: #e7e7e7;
+            /* Color de fondo para los ítems */
+            text-align: center;
+            /* Alineación del texto en los ítems */
+            padding: 20px;
+            /* Relleno dentro de los ítems */
+            border: 1px solid #ddd;
+            /* Borde de los ítems */
+        }
+
+        .texto-antes,
+        .texto-despues {
+            display: inline-block;
+            margin: 0 10px;
+            /* Margen alrededor del texto */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="texto-antes">Texto antes del grid</div>
+    <div class="grid-container">
+        <div>Ítem 1</div>
+        <div>Ítem 2</div>
+        <div>Ítem 3</div>
+    </div>
+    <div class="texto-despues">Texto después del grid</div>
+
+</body>
+
+</html>

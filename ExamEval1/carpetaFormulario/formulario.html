@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body text="white">
+    <div align="middle">
+        <form action="recepdatos.php">
+            <table width="60%" bgcolor="#00368a">
+                <tr>
+                    <td colspan="2" align="center">
+                        <h2>Solicitud de Información - Curso de Informática</h2>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <label for="nombre">Nombre completo*: </label>
+                        <input type="text" size="40" maxlength="60" id="nombre" name="nombre" required
+                            placeholder="Nombre y apellidos">
+                        <br>
+                        <br>
+                        <label for="correo">Correo electrónico*: </label>
+                        <input type="email" size="35" id="correo" name="correo" required>
+                        <br><br>
+                        <label for="tel">Número de teléfono*: </label>
+                        <input type="tel" size="12" maxlength="9" id="tel" name="tel" required>
+                        <br><br>
+                        <label for="CV">Subir CV y carta de presentación:</label><br>
+                        <input type="file" id="CV">
+                        <br><br>
+                        <label for="mes">Mes de interés para el curso:</label><br>
+                        <input type="month" id="mes">
+                        <br><br>
+                        <label for="edad">Tu edad:</label><br>
+                        <input type="number" id="edad" min="18" title="minimo 18 años">
+                        <br>
+                        <br>
+
+                    </td>
+                    <td align="left">
+                        <img alt="la imagen son dos manos picando en el teclado" height="200" width="300"
+                            src="/ExamEval1/imagenes/manos_teclado.webp">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <fieldset>
+
+                            <legend>¿En qué formato prefieres el curso?*</legend>
+
+                            <input type="radio" id="presencial" name="formato" value="1">
+                            <label for="presencial">Presencial</label>
+                            <br>
+                            <input type="radio" id="online" name="formato" value="2">
+                            <label for="online">Online</label>
+                        </fieldset>
+                        <br>
+                        <fieldset>
+                            <legend>Nivel de experiencia en Informática*:</legend>
+                            <input type="radio" id="principiante" name="experiencia" value="1">
+                            <label for="principiante">Principiante</label>
+                            <br>
+                            <input type="radio" id="intermedio" name="experiencia" value="2" checked>
+                            <label for="intermedio">Intermedio</label>
+                            <br>
+                            <input type="radio" id="avanzado" name="experiencia" value="3">
+                            <label for="avanzado">Avanzado</label>
+                        </fieldset>
+
+                        <br>
+                        <input type="checkbox" id="subscripcion" name="subscripcion" value="1" checked>
+                        <label for="subscripcion">Suscribirse al
+                            boletín informativo</label>
+                        <br>
+                        <input type="checkbox" id="terminos" name="terminos" value="2">
+                        <label for="terminos">Acepto los términos y condiciones</label>
+                <tr>
+                    <td align="center" colspan="2">
+                        <input type="submit" value="Enviar solicitud">
+                        <br><br>
+                        <input type="reset" value="Borrar campos">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right" colspan="2">
+                        <a href="/ExamEval1/index.html" link="white">HOME</a><br><br>
+                    </td>
+                </tr>
+
+
+
+
+
+
+
+
+
+
+            </table>
+        </form>
+    </div>
+
+</body>
+
+</html>

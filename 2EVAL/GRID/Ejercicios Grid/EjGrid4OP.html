@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formación Profesional en Informática en España</title>
+</head>
+<style>
+    body {
+        background-color: #e7e7e7;
+        margin: 10px;
+    }
+
+    .header-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr;
+        grid-template-areas:
+            "logo title nav"
+        ;
+        background-color: #0055ba;
+        color: white;
+        align-items: center;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
+        margin: 0px 10px;
+    }
+
+    .logo {
+        grid-area: logo;
+
+    }
+
+    header .logo img {
+        width: 200px;
+        margin: 8px 15px;
+    }
+
+    .title {
+        grid-area: title;
+        text-align: center;
+    }
+
+    header nav {
+        grid-area: nav;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    header nav ul {
+        padding: 0
+    }
+
+    header nav ul li {
+        display: inline;
+    }
+
+    header nav ul a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 5%;
+        color: white;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas:
+            "inicio cursos contacto"
+        ;
+        margin-top: 10px;
+        gap: 5px;
+        margin: 15px 10px 35px;
+    }
+
+    #inicio {
+        grid-area: inicio;
+        padding: 20px 0px 20px 7px;
+    }
+
+    #cursos {
+        grid-area: cursos;
+    }
+
+    #cursos article {
+        background-color: white;
+        border-radius: 10px;
+        box-sizing: border-box;
+        margin: 10px;
+        padding: 15px;
+        box-shadow: 5px 10px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    #contacto {
+        grid-area: contacto;
+        padding: 25px 5px;
+    }
+
+    .web {
+        border-left: solid 3px #0079ff;
+    }
+
+    .sistemas {
+        border-left: solid 3px #00ab34;
+    }
+
+    .multiplataforma {
+        border-left: solid 3px #ffbf00;
+    }
+
+    footer {
+
+        background-color: #333333;
+        text-align: center;
+        color: white;
+        padding: 20px;
+
+    }
+</style>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="logoInf.png" alt="Logo de Formación Profesional Informática"> <!-- Reemplaza con tu imagen -->
+            </div>
+            <div class="title">
+                <h1>Formación en Informática</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#cursos">Cursos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h1>Formación Profesional en Informática en España</h1>
+            <p>Explora cursos, titulaciones y oportunidades en el sector de la informática.</p>
+        </section>
+
+        <section id="cursos">
+            <article class="curso web">
+                <h2>Desarrollo de Aplicaciones Web</h2>
+                <p>Detalles sobre el curso de Desarrollo de Aplicaciones Web...</p>
+            </article>
+            <article class="curso sistemas">
+                <h2>Sistemas Microinformáticos y Redes</h2>
+                <p>Detalles sobre el curso de Sistemas Microinformáticos y Redes...</p>
+            </article>
+            <article class="curso multiplataforma">
+                <h2>Desarrollo de Aplicaciones Multiplataforma</h2>
+                <p>Información sobre el curso de Desarrollo de Aplicaciones Multiplataforma...</p>
+            </article>
+            <!-- Más cursos... -->
+        </section>
+
+        <section id="contacto">
+            <h2>Contacta con Nosotros</h2>
+            <!-- Información de contacto... -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Formación Profesional en Informática en España</p>
+    </footer>
+</body>
+
+</html>

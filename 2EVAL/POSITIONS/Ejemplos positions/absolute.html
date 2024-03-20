@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnología de Computadores</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            position: relative; /* Es necesario para el posicionamiento absoluto dentro */
+        }
+
+        .content {
+            margin-left: 160px; /* Ajusta según el ancho del menú absoluto */
+        }
+
+        header, section, footer {
+            margin: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+        }
+
+        .absolute-menu {
+            position: absolute; /* Cambio a position absolute */
+            top: 0;
+            left: 0;
+            width: 150px; /* Ancho del menú */
+            height: 100%;
+            background: #f3f3f3;
+            padding: 10px;
+        }
+
+        .absolute-menu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .absolute-menu ul li a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .absolute-menu ul li a:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="absolute-menu">
+        <ul>
+            <li><a href="#history">Historia</a></li>
+            <li><a href="#present">Presente</a></li>
+            <li><a href="#innovations">Innovaciones Recientes</a></li>
+            <li><a href="#future">Futuro</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <header>
+            <h1>La Evolución de la Tecnología de los Computadores</h1>
+        </header>
+
+        <section id="history">
+            <h2>Historia</h2>
+            <p>Los computadores han evolucionado desde herramientas mecánicas rudimentarias hasta las complejas máquinas digitales de hoy. La historia de la computación comienza con dispositivos como el ábaco y la máquina de calcular mecánica de Pascal en el siglo XVII. En el siglo XIX, Charles Babbage ideó la máquina analítica, un antepasado conceptual de los computadores modernos.</p>
+            <p>Durante la Segunda Guerra Mundial, la necesidad de computar complejas trayectorias balísticas y códigos secretos aceleró el desarrollo de máquinas computacionales más rápidas y confiables, como la máquina Enigma y el Colossus. Posteriormente, en la década de 1940, la invención de los tubos de vacío permitió la creación del ENIAC, uno de los primeros computadores completamente electrónicos. Los años 50 y 60 vieron la transición a los transistores, lo que llevó a una reducción del tamaño y un aumento del rendimiento.</p>
+            <p>Con el advenimiento de los circuitos integrados en la década de 1970, los computadores personales comenzaron a ser comercialmente viables, un fenómeno que se consolidó en la década de 1980 con el lanzamiento de computadoras como la IBM PC y la Apple Macintosh. La historia de la computación es una historia de constante innovación y mejora, reflejando la creciente demanda de procesamiento de datos más rápido y eficiente.</p>
+        </section>
+        
+
+        <section id="present">
+            <h2>Presente</h2>
+            <p>Hoy en día, los computadores son ubicuos y esenciales para una multitud de tareas personales, educativas y empresariales. La tecnología actual ha avanzado hasta puntos que permiten a los computadores caber en nuestras manos o incluso integrarse en nuestros cuerpos en forma de dispositivos portátiles y wearables. La computación en la nube y los grandes datos están transformando la forma en que almacenamos y procesamos información, permitiendo análisis complejos y la toma de decisiones en tiempo real.</p>
+            <p>La inteligencia artificial y el aprendizaje automático están avanzando a pasos agigantados, ofreciendo nuevas capacidades como el reconocimiento de voz, la visión por computador y los sistemas autónomos. Asimismo, la realidad aumentada y virtual está comenzando a cambiar la forma en que interactuamos con el mundo digital, ofreciendo experiencias inmersivas y aplicaciones prácticas en la educación, el entretenimiento y más allá.</p>
+            <p>La seguridad informática se ha convertido en una preocupación primordial, dado que la vida moderna depende en gran medida de la integridad y la protección de nuestros datos personales y empresariales. Los avances en este campo buscan salvaguardar la privacidad y asegurar que nuestras interacciones y transacciones digitales sean seguras.</p>
+        </section>
+        
+        <section id="innovations">
+            <h2>Innovaciones Recientes</h2>
+            <p>En los últimos años, hemos sido testigos de una rápida sucesión de innovaciones tecnológicas que están redefiniendo lo que los computadores pueden hacer. Las redes 5G están empezando a permitir velocidades de internet ultrarrápidas y una conectividad más confiable, lo que facilita una nueva era de comunicación y tecnología de Internet de las Cosas (IoT).</p>
+            <p>La computación de borde o edge computing está llevando el procesamiento de datos más cerca de donde se necesitan, reduciendo la latencia y mejorando las eficiencias para aplicaciones críticas. Esto es esencial para tecnologías como vehículos autónomos y ciudades inteligentes, donde cada milisegundo cuenta.</p>
+            <p>La tecnología de blockchain está proporcionando nuevas formas de seguridad y verificación de datos, abriendo posibilidades en áreas como finanzas, cadena de suministro y identidades digitales. Mientras tanto, los avances en materiales y hardware, como los procesadores basados en grafeno o la computación neuromórfica, están estableciendo las bases para la próxima generación de dispositivos más rápidos, más pequeños y más eficientes energéticamente.</p>
+            <p>Estas innovaciones están sentando las bases para los próximos desarrollos y preparando el escenario para futuros avances que continuarán transformando nuestras vidas y la sociedad.</p>
+        </section>
+
+        <section id="future">
+            <h2>Futuro</h2>
+            <p>El futuro de la tecnología de los computadores promete ser aún más revolucionario. Se espera que la computación cuántica, que actualmente está en sus etapas iniciales, transforme radicalmente nuestra capacidad para procesar información, resolviendo problemas que son inabordables para las computadoras clásicas.</p>
+            <p>Los desarrollos en la interfaz cerebro-computadora podrían permitirnos comunicarnos directamente con las máquinas o incluso mejorar nuestras propias capacidades cognitivas. Las redes neuronales y la inteligencia artificial continuarán evolucionando, posiblemente alcanzando y superando la inteligencia humana en ciertas tareas, un hito conocido como la singularidad tecnológica.</p>
+            <p>Además, se anticipa que la integración de la tecnología en nuestra vida cotidiana será aún más completa y personalizada. Los computadores y sensores estarán integrados en casi todo nuestro entorno, desde la ropa que vestimos hasta los edificios en los que vivimos, creando un mundo interconectado y reactivo conocido como el Internet de las cosas. El futuro de la tecnología de los computadores es un camino emocionante lleno de posibilidades ilimitadas y desafíos por superar.</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Tecnología Computadores</p>
+        </footer>
+    </div>
+
+</body>
+</html>

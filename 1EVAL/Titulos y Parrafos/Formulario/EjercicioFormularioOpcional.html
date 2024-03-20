@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Envío de Documento a la Administración</h1>
+    <h2>Procedimiento para el Envío</h2>
+    <h3>Requisitos y Consideraciones</h3>
+
+    <p align="center"><b>Nota Importante:</b>Asegúrese de enviar todos los documentos requeridos para evitar retrasos en
+        el proceso.</p>
+    <br>
+    <br>
+    <i>Consejo:</i> Mantenga copias de todos los documentos que envíe y confirme su envío exitoso.
+    <br>
+    <br>
+    <br>
+    <u>Pasos a seguir:</u>
+
+    <ol type="A">
+        <li>Descargar el formulario desde el portal oficial.</li>
+        <li>Completar cada campo del formulario con atención y precisión.</li>
+        <li>Adjunte todos los documentos complementarios.</li>
+        <li>Revise y confirme que todos los datos sean correctos.</li>
+    </ol>
+    <ol type="i">
+        <li>Suba el formulario junto con los documentos adicionales.</li>
+        <li>Envíe el paquete y espere una confirmación de recepción.</li>
+        <li>Al recibir confirmación, conserve el código de envío.</li>
+    </ol>
+    <small>Si tiene dudas o problemas durante el proceso, contacte al departamento de soporte.</small>
+    <br><br>
+    <form action="sumbit" method="post">
+        <fieldset>
+            <legend>Información Personal</legend>
+            <label for="nombre"> Nombre: <input type="text" id="nombre" name="nombre" minlength="2" maxlength="50"
+                    placeholder="Juan Pérez"></label>
+            <br>
+            <label for="email">Correo Electrónico: <input type="email" id="email" name="email"
+                    placeholder="ejemplo@correo.com" size="15"></label>
+            <br>
+            <label for="contrasenya">Contraseña: <input type="password" id="contrasenya" name="contrasenya"
+                    placeholder="******" size="15"></label>
+            <br>
+            <label for="date">Fecha de Nacimiento: <input type="date" id="date" name="date"></label>
+            <br>
+            <label for="time">Hora Preferida de Envío: <input type="time" id="time" name="time"></label>
+        </fieldset>
+        <fieldset>
+            <legend>Detalles del Documento</legend>
+            <label for="numero">Número del Documento: <input type="number" id="numero" name="numero" min="1"
+                    max="9999"></label>
+            <br>
+            <label for="comentarios">Comentarios Adicionales: <textarea id="comentarios" name="comentarios" rows="2"
+                    cols="20"></textarea></label>
+            <br>
+            <label for="color">Color de Portada: <input type="color" id="color" name="color"></label>
+
+            <br>
+            <label for="noti">¿Desea recibir notificaciones?: <input type="checkbox" id="noti" name="noti" value="1"
+                    checked></label>
+            <br>
+            Formato del documento: <label for="formato">
+                <input type="radio" id="formato" name="formato" value="1">PDF
+                <input type="radio" id="formato" name="formato" value="2">DOC
+            </label>
+            <br>
+            Suba su documento: <input type="file" id="file" name="file">
+        </fieldset>
+        <input type="submit" id="envio" name="envio" value="Enviar Documento">
+
+    </form>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo Avanzado de CSS Grid</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-areas:  
+                "header header"
+                "main sidebar"
+                "footer footer"; 
+            gap: 10px;
+            padding: 10px;
+        }
+        header {
+            grid-area: header;
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        main {
+            grid-area: main;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        
+        sidebar {
+            grid-area: sidebar;
+            background-color: #ccc;
+            padding: 20px;
+        }
+        footer {
+            grid-area: footer;
+            background-color: #202020;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="grid-container">
+    <header>Encabezado</header>
+    <main>
+        <h2>Bienvenido al Mundo de la Programación</h2>
+        <p>La programación es un campo emocionante y en constante evolución que ofrece infinitas posibilidades para crear y solucionar problemas. Aquí, exploraremos algunos conceptos básicos y avanzados.</p>
+        <p>Ya sea que estés comenzando con HTML, CSS y JavaScript, o profundizando en lenguajes como Python y Java, siempre hay algo nuevo que aprender.</p>
+        <p>Además, te ofreceremos consejos y trucos para mejorar tus habilidades de programación y mantenerte al día con las últimas tendencias tecnológicas.</p>
+    </main>
+    <sidebar>
+        <h3>Sobre Mí</h3>
+        <p>Soy un desarrollador web apasionado con un interés especial en el diseño frontend. Me encanta crear experiencias de usuario interactivas y atractivas.</p>
+        
+        <h3>Habilidades</h3>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>React & Vue</li>
+            <li>Diseño Responsivo</li>
+        </ul>
+        
+        <h3>Cita del Día</h3>
+        <blockquote>"La simplicidad es la sofisticación definitiva." - Leonardo da Vinci</blockquote>
+    </sidebar>
+    <footer>Pie de Página</footer>
+</div>
+
+</body>
+</html>
