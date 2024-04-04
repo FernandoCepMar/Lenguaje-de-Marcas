@@ -1,27 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio CSS </title>
     <style>
-        
-
-        article{
-            font-size: 20px
-        }
-
         table {
+            margin-left: auto;
+            margin-right: auto;
             width: 60%;
             height: 500px;
-            border: 3px;
-            align: middle;
+            border: 3px grey solid;
+            font-size: 20px;
+            border-right: black 3px solid;
+            border-bottom: black 3px solid;
+        }
+
+        td {
+            border: 1px black solid;
+            border-bottom: 1px grey solid;
+            text-align: center;
         }
 
         th{
-            background-color: #88aacc;
+            border: 1px black solid;
+            border-bottom: 1px grey solid;
+        }
 
+
+        tr:nth-child(odd) {
+            background-color: #bbeeff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #99ccee;
+        }
+
+        tr:nth-child(1) {
+            background-color: white;
+        }
+
+        tr:nth-child(1)>td {
+            background-color: #88aacc;
+            text-align: left;
+        }
+
+        td:nth-child(1) {
+            background-color: #aaaadd;
+        }
+
+        #moda {
+            text-align: center;
         }
     </style>
 </head>
@@ -33,60 +63,60 @@
     </header>
     <br>
     <br>
-
     <article>
 
-        <table width="60%" height="500px" border="3" align="middle">
+        <table>
+
             <th>
-            <td align="middle" bgcolor="#88aacc">Seccion moda</td>
-            <td bgcolor="#88aacc">Sección zapateria</td>
-            <td bgcolor="#88aacc">Sección deportes</td>
-            </td>
-            <td bgcolor="#88aacc">Sección juguetes</td>
+            <td id="moda">Seccion moda</td>
+            <td>Sección zapateria</td>
+            <td>Sección deportes</td>
+            <td>Sección juguetes</td>
             </th>
 
-            <tr align="middle" bgcolor="#99ccee">
-                <td bgcolor="#aaaadd">Enero</td>
+
+            <tr>
+                <td>Enero</td>
                 <td>56.555</td>
                 <td>34.444</td>
                 <td>4.443</td>
                 <td>65.432</td>
             </tr>
 
-            <tr align="middle" bgcolor="#bbeeff">
-                <td bgcolor="#aaaadd">Febrero</td>
+            <tr>
+                <td>Febrero</td>
                 <td>34.543</td>
                 <td>43.433</td>
                 <td>12.754</td>
                 <td>98.322</td>
             </tr>
 
-            <tr align="middle" bgcolor="#99ccee">
-                <td bgcolor="#aaaadd">Marzo</td>
+            <tr>
+                <td>Marzo</td>
                 <td>23.000</td>
                 <td>45.000</td>
                 <td>12.000</td>
                 <td>56.982</td>
             </tr>
 
-            <tr align="middle" bgcolor="#bbeeff">
-                <td bgcolor="#aaaadd">Abril</td>
+            <tr>
+                <td>Abril</td>
                 <td>86.444</td>
                 <td>11.000</td>
                 <td>23.000</td>
                 <td>54.000</td>
             </tr>
 
-            <tr align="middle" bgcolor="#99ccee">
-                <td bgcolor="#aaaadd">Mayo</td>
+            <tr>
+                <td>Mayo</td>
                 <td>43.983</td>
                 <td>3.984</td>
                 <td>45.092</td>
                 <td>11.098</td>
             </tr>
 
-            <tr align="middle" bgcolor="#bbeeff">
-                <td bgcolor="#aaaadd">Junio</td>
+            <tr>
+                <td>Junio</td>
                 <td>34.543</td>
                 <td>43.433</td>
                 <td>12.754</td>
@@ -94,48 +124,48 @@
             </tr>
             </tr>
 
-            <tr align="middle" bgcolor="#99ccee">
-                <td bgcolor="#aaaadd">Julio</td>
+            <tr>
+                <td>Julio</td>
                 <td>23.000</td>
                 <td>45.000</td>
                 <td>12.000</td>
                 <td>56.982</td>
             </tr>
 
-            <tr align="middle" bgcolor="#bbeeff">
-                <td bgcolor="#aaaadd">Agosto</td>
+            <tr>
+                <td>Agosto</td>
                 <td>86.444</td>
                 <td>11.000</td>
                 <td>23.000</td>
                 <td>54.000</td>
             </tr>
 
-            <tr align="middle" bgcolor="#99ccee">
-                <td bgcolor="#aaaadd">Septiembre</td>
+            <tr>
+                <td>Septiembre</td>
                 <td>43.983</td>
                 <td>3.984</td>
                 <td>45.092</td>
                 <td>11.098</td>
             </tr>
 
-            <tr align="middle" bgcolor="#bbeeff">
-                <td bgcolor="#aaaadd">Octubre</td>
+            <tr>
+                <td>Octubre</td>
                 <td>56.555</td>
                 <td>34.444</td>
                 <td>4.443</td>
                 <td>65.432</td>
             </tr>
 
-            <tr align="middle" bgcolor="#99ccee">
-                <td bgcolor="#aaaadd">Noviembre</td>
+            <tr>
+                <td>Noviembre</td>
                 <td>43.983</td>
                 <td>3.984</td>
                 <td>45.092</td>
                 <td>11.098</td>
             </tr>
 
-            <tr align="middle" bgcolor="#bbeeff">
-                <td bgcolor="#aaaadd">Diciembre</td>
+            <tr>
+                <td>Diciembre</td>
                 <td>34.543</td>
                 <td>43.433</td>
                 <td>12.754</td>
@@ -144,9 +174,8 @@
             </tr>
 
         </table>
+
     </article>
-
-
 
 
 </body>
